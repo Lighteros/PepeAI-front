@@ -1,0 +1,46 @@
+* {
+    scroll-behavior: smooth
+}
+
+@font-face {
+    font-family: Alliance;
+    src: url("/_next/static/media/Degarism Studio - Alliance No.1 Light.7faaa559.otf");
+    font-weight: 300;
+    font-display: swap
+}
+
+.astro_animation {
+    animation: mover 3s infinite alternate
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0) rotate(5deg)
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-10deg)
+    }
+
+    to {
+        transform: translateY(-10px) rotate(5deg)
+    }
+}
+
+.rotate {
+    animation: rotation 15s linear infinite
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+#about > :nth-child(1){
+    display: none !important;
+}
